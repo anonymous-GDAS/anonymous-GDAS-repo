@@ -30,7 +30,7 @@ Parameters in `[]` are what you can set.
 
     --source     # source dataset [acm dblp citation]
     --target     # target dataset [acm dblp citation] // different from source
-    --aug_ratio1 # the proportion of sampled subgraph to the overall graph (note that the actual proportion is 1-aug_ratio1) [0~1]
+    --aug_ratio # the proportion of sampled subgraph to the overall graph (note that the actual proportion is 1-aug_ratio) [0~1]
     --ep         # set the epoch of training [1 5 10 15 20]
     --bsz        # set the batchsize of training [10 20 30 40 50]
     --type       # type of the GNN encoder [gcn gin sage]
