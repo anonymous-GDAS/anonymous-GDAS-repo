@@ -17,7 +17,7 @@ This repository contains the author's implementation in PyTorch for the paper "G
 
 The directory structure should look like
 
-    
+
     data/
     |-- acmv9.mat
     |-- citationv1.mat
@@ -30,7 +30,7 @@ Parameters in `[]` are what you can set.
 
     --source     # source dataset [acm dblp citation]
     --target     # target dataset [acm dblp citation] // different from source
-    --aug_ratio1 # the proportion of sampled subgraph to the overall graph (1-aug_ratio1!) [0~1]
+    --aug_ratio1 # the proportion of sampled subgraph to the overall graph (note that the actual proportion is 1-aug_ratio1) [0~1]
     --ep         # set the epoch of training [1 5 10 15 20]
     --bsz        # set the batchsize of training [10 20 30 40 50]
     --type       # type of the GNN encoder [gcn gin sage]
@@ -45,4 +45,4 @@ Parameters in `[]` are what you can set.
 
 ### 4.3 GDAS 
     # simply run
-    python main.py
+    python main.py --source acm --target dblp --ep 5 --bsz 10
